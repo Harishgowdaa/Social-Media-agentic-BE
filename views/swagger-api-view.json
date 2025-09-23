@@ -1,0 +1,55 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "app_version": "1.0",
+    "title": "Socinator API`s",
+    "description": "Documentation",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "AccessToken": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "x-access-token",
+      "description": "Please provide the valid access token, if you don't have please login and get the token as response!"
+    }
+  },
+  "consumes": [
+    "application/json",
+    "application/x-www-form-urlencoded"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/agentic/GoogleSignIn": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "description": "Endpoint to sign in an agent.",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
