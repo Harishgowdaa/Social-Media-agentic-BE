@@ -1,0 +1,9 @@
+{
+  "port": 5000,
+  "mongodb_uri": "mongodb+srv://hgowda515_db_user:wxuOY0HTK4M1mYb5@agent.yc7t4u9.mongodb.net/",
+  "app_version": "1.0",
+  "swagger_host_url": "localhost:5000",
+  "swagger_auth": { "admin": "admin" },
+  "google_clientID": "66970239662-5cf4kv62cl0nv0jjk7ksdik1l6o7c0dr.apps.googleusercontent.com",
+  "client_secret": "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"
+}

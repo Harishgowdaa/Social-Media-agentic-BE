@@ -1,5 +1,5 @@
 import express from "express";
-import agents from "../../core/v1/agents/agents.routes.js";
+import agents from "../../core/v1/User/user.routes.js";
 
 const router = express.Router();
 

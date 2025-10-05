@@ -38,12 +38,46 @@
         }
       }
     },
-    "/api/v1/agentic/GoogleSignIn": {
+    "/api/v1/agentic/social-login": {
       "get": {
         "tags": [
-          "Agents"
+          "Open"
         ],
-        "description": "Endpoint to sign in an agent.",
+        "description": "Social Login for FaceBook,Google,Twitter",
+        "parameters": [
+          {
+            "name": "network",
+            "in": "query",
+            "default": "Facebook",
+            "enum": [
+              "Facebook",
+              "Google",
+              "Twitter"
+            ],
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v1/agentic/google-callback": {
+      "post": {
+        "tags": [
+          "Social-Callback"
+        ],
+        "description": "Google code ",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "default": {
             "description": ""
