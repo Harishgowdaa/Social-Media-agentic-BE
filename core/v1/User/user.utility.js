@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken';
 import config from 'config';
 import logger from '../../../resources/logs/logger.log.js';
 import { UserMessageNew, commonMessage } from '../../../language/language.translator.js';
+import helper from '../../../utils/social.helper.js';
 class UserService {
 
     async socialLogin(req, res, next) {

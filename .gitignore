@@ -9,7 +9,7 @@ package-lock.json
 
 
 # Log files
-resources/logs/responselogs/*
+resources/logs/response/logs/*
 resources/views/swagger-api-view.json
 
 # For Config remover
@@ -24,5 +24,4 @@ MongoSchemas/*
 audit.json
 
 storageconfig.json
-
-logs
+config
